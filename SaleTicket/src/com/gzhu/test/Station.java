@@ -27,6 +27,7 @@ public class Station extends Thread {
                 }
             }
             Thread.yield();//随机一点
+            //Test
         }
 
     }
