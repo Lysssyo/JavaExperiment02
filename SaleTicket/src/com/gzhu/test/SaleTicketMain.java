@@ -13,7 +13,6 @@ public class SaleTicketMain {
         Counter4.start();
         Counter5.start();
         //This a demo
-        //Try again
 
     }
 
