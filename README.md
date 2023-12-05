@@ -33,5 +33,6 @@
 - 创建一个站台类 Station，继承 Thread，重写 run 方法，在 run 方法里面执行售票操作。售票要使用同步锁：即有一个站台卖这张票时，其他站台要等这张票卖完
 
 - 创建主方法调用类
-  ![image-20231205145355856](https://github.com/Lysssyo/JavaExperiment02/assets/111691546/8ffbb4ca-64a3-4290-8deb-6823267007dd)
+  
+![image-20231205145355856](https://github.com/Lysssyo/JavaExperiment02/assets/111691546/8ffbb4ca-64a3-4290-8deb-6823267007dd)
 
