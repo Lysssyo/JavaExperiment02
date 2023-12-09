@@ -8,7 +8,7 @@ public class Station extends Thread {
     static boolean ticketsSoldOut = false;  // 是否卖光了的标志，初始化为false
     static Object obj = new Object();  // 对象锁，用于同步
 
-    //定义一个带参的构造函数，用于新建对象的时间可以顺便把名字给赋值
+    //定义一个带参的构造函数，用于新建线程的同时可以顺便把名字给赋值
     public Station(String name) {
         super(name);  // 调用Thread类的构造方法，设置线程的名称
     }
@@ -23,7 +23,6 @@ public class Station extends Thread {
                 // 如果卖的票数小于20，继续卖票
                 if (ticket < 20) {
                     ticket++;  // 增加卖出的票数
-                    // 输出卖票信息
                     System.out.println(Thread.currentThread().getName() + "卖出了第" + ticket + "张票");
                 } else {
                     // 如果票卖完了且还没有标记为卖光
@@ -35,7 +34,7 @@ public class Station extends Thread {
                     break;
                 }
             }
-            Thread.yield();  // 重新分配CPU，释放一些资源给其他线程
+            Thread.yield();  // 重新分配CPU，线程重新抢CPU
         }
     }
 }
