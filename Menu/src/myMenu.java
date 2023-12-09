@@ -11,6 +11,8 @@ public class myMenu extends JFrame{
         //设置关闭模式
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
+
+
         //初始化菜单，创建整个菜单对象
         JMenuBar jMenuBar=new JMenuBar();
 
@@ -28,9 +30,9 @@ public class myMenu extends JFrame{
         jMenuBar.add(FormatJMenu);
         jMenuBar.add(HelpJMenu);
 
-        //菜单的选项Format添加其对应的选项
+/*        //菜单的选项Format添加其对应的选项
         FormatJMenu.add(LanguageItem);
-        FormatJMenu.add(SystemItem);
+        FormatJMenu.add(SystemItem);*/
 
         //为界面设置菜单
         this.setJMenuBar(jMenuBar);
